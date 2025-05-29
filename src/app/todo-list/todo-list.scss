@@ -1,0 +1,11 @@
+.todo-list-container {
+  max-width: 500px;
+  margin: 0 auto;
+
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,41 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(138, 218, 223, 0.284);
+  }
+
+  .item-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .checked {
+      text-decoration: line-through;
+    }
+  }
+
+  input {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  button {
+    border: none;
+    border-radius: 4px;
+    background-color: #e44159;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #b43548;
+    }
+  }
+}

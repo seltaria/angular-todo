@@ -1,0 +1,12 @@
+<div class="todo-list-container">
+  <h1>Список дел:</h1>
+  <app-todo-add (addTodo)="onAddTodo($event)"></app-todo-add>
+  <div class="todo-list">
+    <app-todo-item
+      *ngFor="let todo of todos"
+      [todo]="todo"
+      (deleteTodo)="onDeleteTodo($event)"
+      (toggleComplete)="onToggleComplete($event)"
+    ></app-todo-item>
+  </div>
+</div>

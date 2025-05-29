@@ -1,0 +1,30 @@
+.form {
+  width: 100%;
+  display: flex;
+
+  input {
+    flex: 1;
+    padding: 4px 10px;
+    border: 1px solid gray;
+    border-radius: 4px 0 0 4px;
+
+    &:focus-visible {
+      border: 1px solid gray;
+      outline: none;
+    }
+  }
+
+  button {
+    padding: 4px 20px;
+    cursor: pointer;
+    background-color: #83d3b5;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover { 
+      background-color: #64a38c;
+    }
+  }
+}
